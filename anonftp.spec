@@ -8,9 +8,9 @@ Version:	2.8
 Release:	1
 License:	GPL
 Group:		Networking/Daemons
-AutoReqProv:	0
 BuildRequires:	/bin/ash
 Requires:	ftpserver
+AutoReqProv:	no
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
