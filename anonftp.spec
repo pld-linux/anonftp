@@ -1,5 +1,5 @@
-Summary:	A program which enables anonymous FTP access.
-Summary(pl):	Program, który pozwala na anonimowy dostêp do FTP'a.
+Summary:	A program which enables anonymous FTP access
+Summary(pl):	Program, który pozwala na anonimowy dostêp do FTP'a
 Summary(ja):	Anonymous FTP ¤ò²ÄÇ½¤Ë¤¹¤ë¥×¥í¥°¥é¥à
 Summary(pt_BR):	Habilita acesso via ftp anônimo
 Summary(es):	Habilita acceso vía ftp anónimo
