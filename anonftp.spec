@@ -51,7 +51,7 @@ install /lib/{libc-*.so,ld-*.so,libnss_files-*.so,libnsl-*.so} \
 	$RPM_BUILD_ROOT/home/ftp/lib
 
 install /bin/{ls,cpio,gzip,tar}			$RPM_BUILD_ROOT/home/ftp/bin
-install /bin/ksh				$RPM_BUILD_ROOT/home/ftp/bin/sh
+install /bin/ash				$RPM_BUILD_ROOT/home/ftp/bin/sh
 install /usr/bin/compress			$RPM_BUILD_ROOT/home/ftp/bin/compress
 ln -sf gzip 					$RPM_BUILD_ROOT/home/ftp/bin/zcat
 
