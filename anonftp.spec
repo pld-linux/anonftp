@@ -61,9 +61,6 @@ install /bin/ash				$RPM_BUILD_ROOT/home/ftp/bin/sh
 install %{_bindir}/compress			$RPM_BUILD_ROOT/home/ftp/bin/compress
 ln -sf gzip 					$RPM_BUILD_ROOT/home/ftp/bin/zcat
 
-strip $RPM_BUILD_ROOT/home/ftp/lib/*
-strip $RPM_BUILD_ROOT/home/ftp/bin/{ls,cpio,gzip,tar}
-
 %post 
 /sbin/ldconfig /home/ftp/lib
 
