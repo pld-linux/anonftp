@@ -4,36 +4,34 @@ Version:	2.8
 Release:	1
 License:	GPL
 Group:		System Environment/Daemons
+######		Unknown group!
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 AutoReqProv:	0
 Requires:	ftpserver
 
 %description
-The anonftp package contains the files you need in order to
-allow anonymous FTP access to your machine. Anonymous FTP access allows
-anyone to download files from your machine without having a user account. 
-Anonymous FTP is a popular way of making programs available via the
-Internet.
+The anonftp package contains the files you need in order to allow
+anonymous FTP access to your machine. Anonymous FTP access allows
+anyone to download files from your machine without having a user
+account. Anonymous FTP is a popular way of making programs available
+via the Internet.
 
 You should install anonftp if you would like to enable anonymous FTP
 downloads from your machine.
 
 %description -l pl
-pakiet anonftp zawiera pliki niezbêdne w celu uruchomienia serwera anonimowego 
-FTP na danej maszynie. Dostêp przez anonimowy FTP pozwala ka¿demu pobieraæ 
-pliki z danego komputera bez potzreby posiadania konta u¿ytkownika.
-Anonimowe FTP jest popularnym sposbem udostepniania plików w Internecie.
+pakiet anonftp zawiera pliki niezbêdne w celu uruchomienia serwera
+anonimowego FTP na danej maszynie. Dostêp przez anonimowy FTP pozwala
+ka¿demu pobieraæ pliki z danego komputera bez potzreby posiadania
+konta u¿ytkownika. Anonimowe FTP jest popularnym sposbem udostepniania
+plików w Internecie.
 
 %prep
 rm -rf $RPM_BUILD_ROOT
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/home/ftp
-install -d $RPM_BUILD_ROOT/home/ftp/pub
-install -d $RPM_BUILD_ROOT/home/ftp/etc
-install -d $RPM_BUILD_ROOT/home/ftp/bin
-install -d $RPM_BUILD_ROOT/home/ftp/lib
+install -d $RPM_BUILD_ROOT/home/ftp/{pub,etc,bin,lib}
 
 cat > $RPM_BUILD_ROOT/home/ftp/etc/passwd <<EOF
 root:*:0:0:::
@@ -52,13 +50,13 @@ adm::4:
 ftp::50:
 EOF
 
-install /etc/ld.so.cache $RPM_BUILD_ROOT/home/ftp/etc
+install %{_sysconfdir}/ld.so.cache $RPM_BUILD_ROOT/home/ftp/etc
 install /lib/{libc-*.so,ld-*.so,libnss_files-*.so,libnsl-*.so} \
 	$RPM_BUILD_ROOT/home/ftp/lib
 
 install /bin/{ls,cpio,gzip,tar}			$RPM_BUILD_ROOT/home/ftp/bin
 install /bin/ash				$RPM_BUILD_ROOT/home/ftp/bin/sh
-install /usr/bin/compress			$RPM_BUILD_ROOT/home/ftp/bin/compress
+install %{_bindir}/compress			$RPM_BUILD_ROOT/home/ftp/bin/compress
 ln -sf gzip 					$RPM_BUILD_ROOT/home/ftp/bin/zcat
 
 strip $RPM_BUILD_ROOT/home/ftp/lib/*
@@ -72,13 +70,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(0444,root,root) %config /home/ftp/etc/passwd
-%attr(0444,root,root) %config /home/ftp/etc/group
-%attr(0444,root,root) /home/ftp/etc/ld.so.cache
 %attr(0755,root,root) %dir /home/ftp
 %attr(0111,root,root) %dir /home/ftp/bin
 %attr(0111,root,root) %dir /home/ftp/etc
-%attr(2755,root,ftp) %dir /home/ftp/pub
+%attr(2755,root,root) %dir /home/ftp/pub
 %attr(0755,root,root) %dir /home/ftp/lib
+%attr(0444,root,root) %config /home/ftp/etc/passwd
+%attr(0444,root,root) %config /home/ftp/etc/group
+%attr(0444,root,root) /home/ftp/etc/ld.so.cache
 %attr(0111,root,root) /home/ftp/bin/*
 %attr(0555,root,root) /home/ftp/lib/*
