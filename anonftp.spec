@@ -10,6 +10,7 @@ License:	GPL
 Group:		Networking/Daemons
 BuildRequires:	/bin/ash
 BuildRequires:	/bin/cpio
+BuildRequires:	fhs-compliance
 Requires:	ftpserver
 AutoReqProv:	no
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
