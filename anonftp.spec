@@ -5,7 +5,7 @@ Summary(pt_BR):	Habilita acesso via ftp anônimo
 Summary(es):	Habilita acceso vía ftp anónimo
 Name:		anonftp
 Version:	2.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Daemons
 BuildRequires:	/bin/ash
