@@ -1,4 +1,5 @@
 Summary:	A program which enables anonymous FTP access.
+Summary(pl):	Program, który pozwala na anonimowy dostêp do FTP'a.
 Name:		anonftp
 Version:	2.8
 Release:	1
