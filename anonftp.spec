@@ -1,8 +1,8 @@
 Summary:	A program which enables anonymous FTP access
-Summary(pl):	Program, który pozwala na anonimowy dostêp do FTP'a
+Summary(pl):	Program, który pozwala na anonimowy dostêp do FTP-a
 Summary(ja):	Anonymous FTP ¤ò²ÄÇ½¤Ë¤¹¤ë¥×¥í¥°¥é¥à
-Summary(pt_BR):	Habilita acesso via ftp anônimo
-Summary(es):	Habilita acceso vía ftp anónimo
+Summary(pt_BR):	Habilita acesso via FTP anônimo
+Summary(es):	Habilita acceso vía FTP anónimo
 Name:		anonftp
 Version:	2.8
 Release:	2
@@ -38,13 +38,13 @@ anonymous FTP ¤òÍøÍÑ¤¹¤ì¤Ð¡¢¥æ¡¼¥¶¥¢¥«¥¦¥ó¥È¤Ê¤·¤Ç¤âFTP¤Ø¤Î¥¢¥¯¥»¥¹¤¬²ÄÇ½
 ¤Ë¤Ê¤ê¤Þ¤¹¡£
 
 %description -l pt_BR
-Contém os arquivos necessários para permitir acesso ftp anônimo a sua
+Contém os arquivos necessários para permitir acesso FTP anônimo a sua
 máquina. Isso deixa qualquer usuário pegar arquivos de sua máquina sem
 ter uma conta, o que é um meio popular de tornar programas disponíveis
 na Internet.
 
 %description -l es
-Contiene los archivos necesarios para permitir acceso ftp anónimo a tu
+Contiene los archivos necesarios para permitir acceso FTP anónimo a tu
 máquina. Esto deja cualquier usuario coger archivos de tu máquina sin
 tener una cuenta, esto es un medio popular de poner a disposición
 programas en Internet.
