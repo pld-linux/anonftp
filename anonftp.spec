@@ -4,7 +4,7 @@ Version:	2.8
 Release:	1
 License:	GPL
 Group:		System Environment/Daemons
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 AutoReqProv:	0
 Requires:	ftpserver
 
