@@ -52,9 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/home/ftp/{pub,etc,bin,lib}
+install -d $RPM_BUILD_ROOT/home/services/ftp/{pub,etc,bin,lib}
 
-cat > $RPM_BUILD_ROOT/home/ftp%{_sysconfdir}/passwd <<EOF
+cat > $RPM_BUILD_ROOT/home/services/ftp%{_sysconfdir}/passwd <<EOF
 root:*:0:0:::
 bin:*:1:1:::
 operator:*:11:0:::
@@ -62,7 +62,7 @@ ftp:*:14:50:::
 nobody:*:99:99:::
 EOF
 
-cat > $RPM_BUILD_ROOT/home/ftp%{_sysconfdir}/group <<EOF
+cat > $RPM_BUILD_ROOT/home/services/ftp%{_sysconfdir}/group <<EOF
 root::0:
 bin::1:
 daemon::2:
@@ -71,30 +71,30 @@ adm::4:
 ftp::50:
 EOF
 
-install %{_sysconfdir}/ld.so.cache $RPM_BUILD_ROOT/home/ftp%{_sysconfdir}
+install %{_sysconfdir}/ld.so.cache $RPM_BUILD_ROOT/home/services/ftp%{_sysconfdir}
 install /lib/{libc-*.so,ld-*.so,libnss_files-*.so,libnsl-*.so} \
-	$RPM_BUILD_ROOT/home/ftp/lib
+	$RPM_BUILD_ROOT/home/services/ftp/lib
 
-install /bin/{ls,cpio,gzip,tar}			$RPM_BUILD_ROOT/home/ftp/bin
-install /bin/ash				$RPM_BUILD_ROOT/home/ftp/bin/sh
-install %{_bindir}/compress			$RPM_BUILD_ROOT/home/ftp/bin/compress
-ln -sf gzip 					$RPM_BUILD_ROOT/home/ftp/bin/zcat
+install /bin/{ls,cpio,gzip,tar}			$RPM_BUILD_ROOT/home/services/ftp/bin
+install /bin/ash				$RPM_BUILD_ROOT/home/services/ftp/bin/sh
+install %{_bindir}/compress			$RPM_BUILD_ROOT/home/services/ftp/bin/compress
+ln -sf gzip 					$RPM_BUILD_ROOT/home/services/ftp/bin/zcat
 
 %post
-/sbin/ldconfig /home/ftp/lib
+/sbin/ldconfig /home/services/ftp/lib
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(0755,root,root) %dir /home/ftp
-%attr(0111,root,root) %dir /home/ftp/bin
-%attr(0111,root,root) %dir /home/ftp%{_sysconfdir}
-%attr(2755,root,root) %dir /home/ftp/pub
-%attr(0755,root,root) %dir /home/ftp/lib
-%attr(0444,root,root) %config /home/ftp%{_sysconfdir}/passwd
-%attr(0444,root,root) %config /home/ftp%{_sysconfdir}/group
-%attr(0444,root,root) /home/ftp%{_sysconfdir}/ld.so.cache
-%attr(0111,root,root) /home/ftp/bin/*
-%attr(0555,root,root) /home/ftp/lib/*
+%attr(0755,root,root) %dir /home/services/ftp
+%attr(0111,root,root) %dir /home/services/ftp/bin
+%attr(0111,root,root) %dir /home/services/ftp%{_sysconfdir}
+%attr(2755,root,root) %dir /home/services/ftp/pub
+%attr(0755,root,root) %dir /home/services/ftp/lib
+%attr(0444,root,root) %config /home/services/ftp%{_sysconfdir}/passwd
+%attr(0444,root,root) %config /home/services/ftp%{_sysconfdir}/group
+%attr(0444,root,root) /home/services/ftp%{_sysconfdir}/ld.so.cache
+%attr(0111,root,root) /home/services/ftp/bin/*
+%attr(0555,root,root) /home/services/ftp/lib/*
