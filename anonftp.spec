@@ -36,16 +36,16 @@ anonymous FTP ¤òÍøÍÑ¤¹¤ì¤Ð¡¢¥æ¡¼¥¶¥¢¥«¥¦¥ó¥È¤Ê¤·¤Ç¤âFTP¤Ø¤Î¥¢¥¯¥»¥¹¤¬²ÄÇ½
 ¤Ë¤Ê¤ê¤Þ¤¹¡£
 
 %description -l pt_BR
-Contém os arquivos necessários para permitir acesso ftp anônimo
-a sua máquina.  Isso deixa qualquer usuário pegar arquivos de
-sua máquina sem ter uma conta, o que é um meio popular de tornar
-programas disponíveis na Internet.
+Contém os arquivos necessários para permitir acesso ftp anônimo a sua
+máquina. Isso deixa qualquer usuário pegar arquivos de sua máquina sem
+ter uma conta, o que é um meio popular de tornar programas disponíveis
+na Internet.
 
 %description -l es
-Contiene los archivos necesarios para permitir acceso ftp anónimo
-a tu máquina. Esto deja cualquier usuario coger archivos de tu
-máquina sin tener una cuenta, esto es un medio popular de poner a
-disposición programas en Internet.
+Contiene los archivos necesarios para permitir acceso ftp anónimo a tu
+máquina. Esto deja cualquier usuario coger archivos de tu máquina sin
+tener una cuenta, esto es un medio popular de poner a disposición
+programas en Internet.
 
 %prep
 rm -rf $RPM_BUILD_ROOT
@@ -80,7 +80,7 @@ install /bin/ash				$RPM_BUILD_ROOT/home/ftp/bin/sh
 install %{_bindir}/compress			$RPM_BUILD_ROOT/home/ftp/bin/compress
 ln -sf gzip 					$RPM_BUILD_ROOT/home/ftp/bin/zcat
 
-%post 
+%post
 /sbin/ldconfig /home/ftp/lib
 
 %clean
