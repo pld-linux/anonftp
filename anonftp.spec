@@ -8,8 +8,6 @@ Version:	2.8
 Release:	1
 License:	GPL
 Group:		Networking/Daemons
-Group(de):	Netzwerkwesen/Server
-Group(pl):	Sieciowe/Serwery
 AutoReqProv:	0
 BuildRequires:	/bin/ash
 Requires:	ftpserver
