@@ -26,8 +26,8 @@ downloads from your machine.
 %description -l pl
 pakiet anonftp zawiera pliki niezbêdne w celu uruchomienia serwera
 anonimowego FTP na danej maszynie. Dostêp przez anonimowy FTP pozwala
-ka¿demu pobieraæ pliki z danego komputera bez potzreby posiadania
-konta u¿ytkownika. Anonimowe FTP jest popularnym sposbem udostepniania
+ka¿demu pobieraæ pliki z danego komputera bez potrzeby posiadania
+konta u¿ytkownika. Anonimowe FTP jest popularnym sposobem udostêpniania
 plików w Internecie.
 
 %description -l ja
