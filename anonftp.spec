@@ -3,8 +3,8 @@ Name:		anonftp
 Version:	2.8
 Release:	1
 License:	GPL
-Group:		System Environment/Daemons
-######		Unknown group!
+Group:          Networking/Daemons
+Group(pl):      Sieciowe/Serwery
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 AutoReqProv:	0
 Requires:	ftpserver
