@@ -1,8 +1,8 @@
 Summary:	A program which enables anonymous FTP access
-Summary(pl.UTF-8):   Program, który pozwala na anonimowy dostęp do FTP-a
-Summary(ja.UTF-8):   Anonymous FTP を可能にするプログラム
-Summary(pt_BR.UTF-8):   Habilita acesso via FTP anônimo
-Summary(es.UTF-8):   Habilita acceso vía FTP anónimo
+Summary(pl.UTF-8):	Program, który pozwala na anonimowy dostęp do FTP-a
+Summary(ja.UTF-8):	Anonymous FTP を可能にするプログラム
+Summary(pt_BR.UTF-8):	Habilita acesso via FTP anônimo
+Summary(es.UTF-8):	Habilita acceso vía FTP anónimo
 Name:		anonftp
 Version:	2.8
 Release:	2
