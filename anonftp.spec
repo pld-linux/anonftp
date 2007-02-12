@@ -1,8 +1,8 @@
 Summary:	A program which enables anonymous FTP access
-Summary(pl):	Program, który pozwala na anonimowy dostêp do FTP-a
-Summary(ja):	Anonymous FTP ¤ò²ÄÇ½¤Ë¤¹¤ë¥×¥í¥°¥é¥à
-Summary(pt_BR):	Habilita acesso via FTP anônimo
-Summary(es):	Habilita acceso vía FTP anónimo
+Summary(pl.UTF-8):   Program, ktÃ³ry pozwala na anonimowy dostÄ™p do FTP-a
+Summary(ja.UTF-8):   Anonymous FTP ã‚’å¯èƒ½ã«ã™ã‚‹ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
+Summary(pt_BR.UTF-8):   Habilita acesso via FTP anÃ´nimo
+Summary(es.UTF-8):   Habilita acceso vÃ­a FTP anÃ³nimo
 Name:		anonftp
 Version:	2.8
 Release:	2
@@ -25,28 +25,28 @@ via the Internet.
 You should install anonftp if you would like to enable anonymous FTP
 downloads from your machine.
 
-%description -l pl
-pakiet anonftp zawiera pliki niezbêdne w celu uruchomienia serwera
-anonimowego FTP na danej maszynie. Dostêp przez anonimowy FTP pozwala
-ka¿demu pobieraæ pliki z danego komputera bez potrzeby posiadania
-konta u¿ytkownika. Anonimowe FTP jest popularnym sposobem udostêpniania
-plików w Internecie.
+%description -l pl.UTF-8
+pakiet anonftp zawiera pliki niezbÄ™dne w celu uruchomienia serwera
+anonimowego FTP na danej maszynie. DostÄ™p przez anonimowy FTP pozwala
+kaÅ¼demu pobieraÄ‡ pliki z danego komputera bez potrzeby posiadania
+konta uÅ¼ytkownika. Anonimowe FTP jest popularnym sposobem udostÄ™pniania
+plikÃ³w w Internecie.
 
-%description -l ja
-anonftp¥Ñ¥Ã¥±¡¼¥¸¤Ï anonymous FTP ¤ò¸ø³«¤¹¤ë¤¿¤á¤ËÉ¬Í×¤Ê´Ä¶­¤òÄó¶¡¤·¤Ş¤¹¡£
-anonymous FTP ¤òÍøÍÑ¤¹¤ì¤Ğ¡¢¥æ¡¼¥¶¥¢¥«¥¦¥ó¥È¤Ê¤·¤Ç¤âFTP¤Ø¤Î¥¢¥¯¥»¥¹¤¬²ÄÇ½
-¤Ë¤Ê¤ê¤Ş¤¹¡£
+%description -l ja.UTF-8
+anonftpãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã¯ anonymous FTP ã‚’å…¬é–‹ã™ã‚‹ãŸã‚ã«å¿…è¦ãªç’°å¢ƒã‚’æä¾›ã—ã¾ã™ã€‚
+anonymous FTP ã‚’åˆ©ç”¨ã™ã‚Œã°ã€ãƒ¦ãƒ¼ã‚¶ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãªã—ã§ã‚‚FTPã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ãŒå¯èƒ½
+ã«ãªã‚Šã¾ã™ã€‚
 
-%description -l pt_BR
-Contém os arquivos necessários para permitir acesso FTP anônimo a sua
-máquina. Isso deixa qualquer usuário pegar arquivos de sua máquina sem
-ter uma conta, o que é um meio popular de tornar programas disponíveis
+%description -l pt_BR.UTF-8
+ContÃ©m os arquivos necessÃ¡rios para permitir acesso FTP anÃ´nimo a sua
+mÃ¡quina. Isso deixa qualquer usuÃ¡rio pegar arquivos de sua mÃ¡quina sem
+ter uma conta, o que Ã© um meio popular de tornar programas disponÃ­veis
 na Internet.
 
-%description -l es
-Contiene los archivos necesarios para permitir acceso FTP anónimo a tu
-máquina. Esto deja cualquier usuario coger archivos de tu máquina sin
-tener una cuenta, esto es un medio popular de poner a disposición
+%description -l es.UTF-8
+Contiene los archivos necesarios para permitir acceso FTP anÃ³nimo a tu
+mÃ¡quina. Esto deja cualquier usuario coger archivos de tu mÃ¡quina sin
+tener una cuenta, esto es un medio popular de poner a disposiciÃ³n
 programas en Internet.
 
 %prep
